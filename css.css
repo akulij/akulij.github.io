@@ -1,0 +1,78 @@
+body {margin: 0px;margin-top: 0px;}
+#MenuOpen {
+	height:40px;
+	width: 40px;
+	border:1px solid black;
+	background: #123a8c;
+	cursor: pointer;
+	background-size: 100%;
+	/*background-image:url("menu.png");*/
+	position: absolute;
+	z-index: 3;
+}
+#sidebar{
+	height: 100%;
+	width: 200px;
+	border:1px solid black;
+	background: #123a8c; /*#ccc;*/
+	top: -2px;
+	left: -160px;
+	position: absolute;
+	z-index: 2;
+	border-right: 1px solid black;
+	transition-property: left;
+  transition-duration: 0.7s;
+}
+#sidebar div {
+	float: bottom;
+	position: relative;
+	bottom: 10px;
+	cursor: pointer;
+	color: #fff;
+	width: 160px;
+	height: 35px;
+	background-color: #093789;
+	font-size: 20px;
+}
+#sidebar div:hover {
+	cursor: pointer;
+	color: #fff;
+	width: 200px;
+	height: 35px;
+	background-color: #1648a0;
+}
+#settings {
+}
+#cmenu{
+	 height: 40px;
+	 width: 40px;
+	 position: absolute;
+	 top: -1px;
+	 left: -1px;
+	 border: 1px solid black;
+}
+#sidebar a {
+	cursor: pointer;
+	color: #fff;
+}
+#content{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: #2055c1;
+}
+/*You need to remember it!
+<button id="color">Кликни меня</button>
+
+<style>
+  #color {
+    transition-property: background-color;
+    transition-duration: 3s;
+  }
+</style>
+
+<script>
+  color.onclick = function() {
+    this.style.backgroundColor = 'red';
+  }
+</script>*/
