@@ -49,14 +49,15 @@
 		PosSide =!PosSide;
 			if (PosSide) {
 				document.getElementById("sidebar").style.left=0;
-				//console.log("showed");
-				console.log("akulij.tk/RARorJPGfile.unknow");
+				console.log("showed");
 				}
 			else {
 				document.getElementById("sidebar").style.left="-160px";
-				//console.log("closed");
-				console.log("RARorJPGfile.unknow");
+				console.log("closed");
 				}}
+	function showMenu() {
+		document.getElementById("getfile").style.display="block";
+		}
     </script>
 	</head>
 	<body>
@@ -66,7 +67,8 @@
 		</div>
 		<div id="sidebar">
 			<br><br><br>
-			<div id="settings"><a href=''>Look at the console!</a></div>
+			<div id="settings" onclick="showMenu()"><a href=''>Menu Show</a></div>
+			<div id="getfile"><a href="/file.rar.jpg">Download!</a></div>
 			
 		</div>
 		<div id="content">
