@@ -1,88 +1,141 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head><meta charset="utf-8">
-		<title>Страна</title>
-    <link rel="stylesheet" href="css.css">
-    <script>
-		PosSide=false;
-		document.getElementById("settings").style.top=
-		 document.documentElement.clientHeight;
-		function canv() {var canvas = document.getElementById('cmenu');
-      var context = canvas.getContext('2d');
-			///settings for menu
-			//
-			var color = "#fff";//setup this
-			var startpos = 33;//setup this
-			var size=17;//setup this
-			var distance=40;//setup this
-			var lenth=220;//setup this
-			//
-			///end of settings
-			var leftpos = (300-lenth)/2-2;//do not setup this
-			var dister=distance;//not setup this
-      context.beginPath();
-      context.moveTo(leftpos, startpos);
-      context.lineTo(leftpos+lenth-2, startpos);
-			context.strokeStyle = color; // цвет линии
-			context.lineCap = "round";
-			context.lineWidth=size;
-      context.stroke();
-			distance = startpos + dister;
-      context.beginPath();
-      context.moveTo(leftpos, distance);
-      context.lineTo(leftpos+lenth-2, distance);
-			context.strokeStyle = color; // цвет линии
-			context.lineCap = "round";
-			context.lineWidth=17;
-      context.stroke();
-			distance = distance + dister;
-      context.beginPath();
-      context.moveTo(leftpos, distance);
-      context.lineTo(leftpos+lenth-2, distance);
-			context.strokeStyle = color; // цвет линии
-			context.lineCap = "round";
-			context.lineWidth=17;
-      context.stroke();
-			distance = distance + dister;
-		}
-		PosSide=false;
-    function showSidebar() {
-		PosSide =!PosSide;
-			if (PosSide) {
-				document.getElementById("sidebar").style.left=0;
-				console.log("showed");
-				}
-			else {
-				document.getElementById("sidebar").style.left="-160px";
-				console.log("closed");
-				}}
-	function showMenu() {
-		document.getElementById("getfile").style.display="block";
-		}
-    </script>
-	</head>
-	<body>
-		<div id="MenuOpen" onclick="showSidebar()">
-			<canvas id="cmenu">M</canvas>
-			<script>canv();</script>
-		</div>
-		<div id="sidebar">
-			<br><br><br>
-			<div id="settings" onclick="showMenu()"><a href=''>Menu Show</a></div>
-			<div id="getfile"><a href="/file.rar.jpg">Download!</a></div>
-			
-		</div>
-		<div id="content">
-		</div>
-		<div id="footer">
-		//
-		//
-		//здесь меню
-		//
-		//
-		//
-		//
+    <head>
+        <title>Test site ;)</title>
+        <!-- <script src="./script.js"></script> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300&family=Dancing+Script:wght@500&family=Montserrat:ital,wght@0,600;1,500&family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </head>
+    <body>
+        <div class="section section_hello">
+            <!-- <div class="bg">
+                <img src="https://wallpaperaccess.com/full/357909.jpg">
+                </img>
+            </div> -->
+            <div class="header_block" id="header">
+                <header class="header">
+                    <div class="header_content">
+                        <a class="header_button" href="#">Home</a>
+                        <a class="header_button" href="#">Pages</a>
+                        <a class="header_button" href="#">News</a>
+                        <a class="header_button" href="#">About</a>
+                    </div>
+                </header>
+            </div>
+            <div class="start_splash">
+                <div>
+                    <h1 class="site_name">Akulij's</h1>
+                    <h2 class="site_name_desc">The best sites ever</h2>
+                    <a class="order_site" href="#">Order a site</a>
+                </div>
+            </div>
+        </div>
+        <div class="section section_author" id="author">
+            <div class="author">
+                <div class="prof_pic"><img src="images/author_logo.png"></div>
+                <div class="prof_desc">
+                    <div class="prof_role"><h1>Main Developer</h1></div>
+                    <div class="role_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                </div>
+            </div>
+        </div>
+        <div class="section section_about">
+            <div class="section_name"><h1>About Us</h1></div>
+            <div class="section_content">
+                <div class="block">
+                    <div class="block_content">
+                        <img src="images/aboutus/web-design.jpg" alt="" class="block_img">
+                        <div class="block_overlay"><div class="block_text">Fast developing web-sites</div></div>
+                    </div>
+                    <div class="block_name">Web Design</div>
+                </div>
+                <div class="block">
+                    <div class="block_content">
+                        <img src="images/aboutus/programming.jpg" alt="" class="block_img">
+                        <div class="block_overlay"><div class="block_text">Best programming software</div></div>
+                    </div>
+                    <div class="block_name">Programming</div>
+                </div>
+                <div class="block">
+                    <div class="block_content">
+                        <img src="images/aboutus/server.jpg" alt="" class="block_img">
+                        <div class="block_overlay"><div class="block_text">High efficency servers</div></div>
+                    </div>
+                    <div class="block_name">Servers</div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="section section_faq">
+            <div class="faq_block">
+                <div class="faq_img">
+                    <img src="images/faq.png">
+                </div>
+                <div class="questions">
+                    <div class="question"><span>First question?</span>
+                        <div class="answer">
+                            <div class="answer_content">Ahaha</div>
+                        </div>
+                    </div>
+                    <div class="question"><span>Second question?</span>
+                        <div class="answer"></div>
+                    </div>
+                    <div class="question"><span>Third question?</span>
+                        <div class="answer"></div>
+                    </div>
+                    <div class="question"><span>Fourth question?</span>
+                        <div class="answer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
 
-	</div>
-	</body>
+        <!--
+        <div class="section section_oursites">
+            <div class="section_name"><h1>Our Projects</h1></div>
+            <div class="section_content">
+                <div class="block">
+                    <div class="block_card">
+                        <div class="card_img">
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block_card"></div>
+                </div>
+                <div class="block">
+                    <div class="block_card"></div>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <div class="section section_subscribe">
+            <div class="section_name">
+                <h1>Subscribe to our updates</h1>
+            </div>
+            <div class="section_content" id="card_section">
+                <div class="subscribe_content">
+                    <div class="subscribe_card">
+                        <form method="post">
+                            <input type="text" name="name" class="subscribe_name" placeholder="Your Name">
+                            <input type="text" name="email" class="subscribe_email" placeholder="Your Email">
+                            <input type="submit" name="Subscribe" class="subscribe_submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="section footer">
+            <div class="copyright"><span>@Copyright</span> Akulij™</div>
+            <!-- -->
+        </footer>
+    </body>
+    <footer>
+        <script src="./script.js"></script>
+    </footer>
 </html>
