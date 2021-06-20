@@ -392,12 +392,12 @@
     /*background: #000;*/
     box-shadow: 0 0 10px #0009;
     /*transition: box-shadow 0.2s linear;*/
-    animation-duration: .5s;
+    animation-duration: .2s;
     animation-name: popout;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
 }
 .subscribe_card:hover {
-    animation-duration: .5s;
+    animation-duration: .3s;
     animation-name: popup;
     animation-timing-function: ease-out;
     box-shadow: 0 0 15px #0009;
@@ -410,15 +410,15 @@
         box-shadow: 0 0 10px #0009;
     }
     33% {
-        transform:  rotate3d(1, -1, 0, 15deg) scale(1.025,1.025);
+        transform:  rotate3d(1, -1, 0, 12deg) scale(1.015,1.015);
         /*box-shadow: 0 0 10px #0009;*/
     }
     66% {
-        transform:  rotate3d(1, -1, 0, 0deg) scale(1.04,1.04);
+        transform:  rotate3d(1, -1, 0, 0deg) scale(1.02,1.02);
         box-shadow: 0 0 20px #0009;
     }
     100% {
-        transform:  rotate3d(1, -1, 0, 0deg) scale(1.02,1.02);
+        transform:  rotate3d(1, -1, 0, 0deg) scale(1.015,1.015);
         box-shadow: 0 0 15px #0009;
     }
 }
