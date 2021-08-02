@@ -1,6 +1,3 @@
-// alert("Hello!")
-//document.getElementById("header").innerHTML
-
 window.addEventListener("scroll", function() {
 	let header = document.getElementById("header");
 
@@ -10,12 +7,3 @@ window.addEventListener("scroll", function() {
 		header.classList.remove("sticky");
 	}
 });
-/*
-// document.onmousemove
-function followCard(event) {
-	console.log(event.clientX, event.clientY, window.innerWidth)
-	
-}
-card_section = document.getElementById("card_section")
-card_section.onmousemove = followCard
-*/
