@@ -3,17 +3,17 @@
     margin-right: 0;
     width: 100%;
 }
-.section_hello {
+.section-hello {
     height: 100vh;
     background: no-repeat center center url(https://wallpaperaccess.com/full/357909.jpg), rgba(255, 255, 255, 0.9);
     background-size: cover;
     background-blend-mode: overlay;
 }
-.section_author {
+.section-author {
     background: #FFF;
     min-height: 100px;
 }
-.section_name {
+.section__name {
     margin: 0 auto;
     text-align: center;
     padding: 10px;
@@ -62,7 +62,7 @@
 }
 
 /*Header*/
-.header_block {
+.header-container {
      z-index: 10; 
     position: fixed;
     margin: 0 auto;
@@ -81,32 +81,32 @@
     font-weight: 300;
     transition:  all .4s cubic-bezier(0.25, 0.52, 0.40, 1.00);
 }
-.header_content {
+.header__content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     vertical-align: middle;
 }
-.header_button {
+.header__button {
     padding: 10px;
     color: #000;
     text-decoration: none;
     transition:  background .2s linear,padding .4s ease-in-out;
 }
-.header_button:hover {
+.header__button:hover {
     background: #000;
     color: #fff;
 }
-.header_block.sticky {
+.header-container.sticky {
     padding-top: 0;
 }
-.header_block.sticky .header {
+.header-container.sticky .header {
     background: rgba(255, 255, 255, .7);
     max-width: none;
     width: 100%;
     border-radius: 0;
 }
-.header_block.sticky .header .header_button {
+.header-container.sticky .header .header__button {
     padding: 5px 10px;
 }
 
@@ -120,7 +120,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.site_name {
+.site-splash__name {
     line-height: 1;
     margin: 0 auto;
     font-size: 10em;
@@ -128,14 +128,14 @@
     font-weight: 600;
     font-style: italic;
 }
-.site_name_desc {
+.site-splash__description {
     line-height: 1;
     margin: 0 auto;
     font-family: 'Heebo', sans-serif;
     font-weight: 200;
     margin-bottom: 20px;
 }
-.order_site {
+.order-site-button {
     padding: 5px;
     margin-top: 35px;
     width: 140px;
@@ -149,17 +149,17 @@
     text-decoration: none;
     transition: background .15s linear;
 }
-.order_site:hover {
+.order-site-button:hover {
     background: #000;
     color: #fff;
 }
 
-.section_about {
+.section-about {
     background: #000;
     color: #fff;
     font-family: 'Dancing Script', sans-serif;
 }
-.section_content {
+.section__content {
     display: flex;
     justify-content: center;
 }
@@ -167,25 +167,25 @@
     width: 25%;
     padding: 4px;
 }
-.block_content {
+.block__content {
     background: #000;
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
     position: relative;
     cursor: pointer;
 }
-.block_content:hover .block_img {
+.block__content:hover .block__img {
     opacity: 0.4;
 }
-.block_content:hover .block_overlay {
+.block__content:hover .block__overlay {
     opacity: 1;
 }
-.block_text {
+.block__text {
     max-width: 70%;
     text-align: center;
     margin: 0 auto;
 }
-.block_overlay {
+.block__overlay {
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -196,12 +196,12 @@
     justify-content: center;
     transition: opacity .15s ease-in-out;
 }
-.block_img {
+.block__img {
     display: block;
     width: 100%;
     transition: opacity .15s ease-in-out;
 }
-.block_name {
+.block__name {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
@@ -212,26 +212,6 @@
     font-size: 20px;
 }
 
-.section_faq {
-    border-bottom: 1px solid #000;
-    display: flex;
-}
-.section_faq div {
-    display: flex;
-}
-.faq_block {
-    padding: 40px;
-}
-.faq_img {
-    margin-left: 3%;
-    max-width: 40%;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-}
-.faq_img img {
-    width: 100%;
-    padding: 0;
-}
 .questions {
     margin-left: 20px;
     height: 100%;
@@ -260,42 +240,42 @@
     height: 415%;
     width: 100%;
 }
-.answer_content {
+.answer-content {
     top: -1px;
     position: relative;
     border-right: 1px solid #000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
-.section_oursites {
+.section-oursites {
     min-height: 100px;
     background: #fff;
 }
-.block_card {
+.block-card {
     width: 100%;
     background: #fff;
     min-height: 400px;
     box-shadow: 0 0 6px #0009;
     display: block;
 }
-.card_img {
+.card-img {
     width: 100%;
     height: 50%;
 }
-.subscribe_content {
+.subscribe-content {
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 30px;
 }
-.subscribe_card {
+.subscribe-card {
     width: 500px;
     height: 300px;
     box-shadow: 0 0 10px #0009;
     transition: transform .3s ease-out;
 }
-.subscribe_card:hover {
+.subscribe-card:hover {
     transform: scale(1.02,1.02);
 
 }
@@ -327,14 +307,14 @@
     }
 }
 
-.subscribe_card form {
+.subscribe-card form {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.subscribe_card form input {
+.subscribe-card form input {
     margin: 2px auto;
     border: 1px solid #000;
     height: 50px;
@@ -343,11 +323,11 @@
     font-size: 16px;
     text-align: center;
 }
-.subscribe_name, .subscribe_email {
+.subscribe-name, .subscribe-email {
     background: #fff;
     width: 300px;
 }
-.subscribe_submit {
+.subscribe-submit {
     width: 306px;
     color: #fff;
     background: #000;
